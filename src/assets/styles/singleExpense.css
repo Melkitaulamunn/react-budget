@@ -1,0 +1,49 @@
+.expenseWrapper{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.expenseTitle{
+    color: rgba(0,0,0,0.7);
+    text-transform: capitalize;
+}
+.expenseDescription{
+    color: rgba(0,0,0,0.5);
+    margin: 10px 0px;
+}
+.expensePrice{
+    color: rgb(225, 98, 98);
+}
+.expenseWrapper:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.btnsWrapper{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    gap: 10px;
+}
+.expenseIcon{
+    width: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.expenseIcon:hover{
+    transform: scale(1.025);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+.expenseCategoryName{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: #32CD32;
+    padding: 4px 5px;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+}

@@ -1,0 +1,46 @@
+{
+ "expenses":[
+    {
+    "id":"1",
+    "price":"100",
+    "place":"A101",
+    "date":"19.01.2023",
+    "title":"haftalık market",
+    "description":"yağ mı o nasıl bişey?",
+    "categorieId":"1"
+},
+{
+    "id":"2",
+    "price":"40000",
+    "place":"Apple",
+    "date":"19.01.2023",
+    "title":"Macbook",
+    "description":"Benim olduuu",
+    "categorieId":"4"
+}
+ ]  ,
+ "categories":[
+    {
+        "id":"1",
+        "name":"market"
+    },
+    {
+        "id":"2",
+        "name":"Giyim"
+    },
+    {
+        "id":"3",
+        "name":"eğitim"
+    },
+    {
+        "id":"4",
+        "name":"elektronik"
+    },
+    {
+        "id":"5",
+        "name":"eğlence"
+    }
+
+ ] 
+
+}

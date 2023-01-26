@@ -1,0 +1,18 @@
+.expensesContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.expensesWrapper{
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+    margin: 50px 0px;
+}
+.emptyList{
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+    color: orangered;
+}

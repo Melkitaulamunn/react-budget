@@ -1,0 +1,29 @@
+.categoriesContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.categoriesWrapper{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+}
+.categoryItem{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.categoryItem:hover{
+    background-color: rgba(0,0,0,0.2);
+    transform: scale(1.025);
+}
+.categoryItemActive{
+    background-color: rgba(0,0,0,0.2);
+}
