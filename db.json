@@ -7,7 +7,7 @@
     "date":"19.01.2023",
     "title":"haftalık market",
     "description":"yağ mı o nasıl bişey?",
-    "categorieId":"1"
+    "categoryId":"1"
 },
 {
     "id":"2",
@@ -16,13 +16,13 @@
     "date":"19.01.2023",
     "title":"Macbook",
     "description":"Benim olduuu",
-    "categorieId":"4"
+    "categoryId":"4"
 }
  ]  ,
  "categories":[
     {
         "id":"1",
-        "name":"market"
+        "name":"Market"
     },
     {
         "id":"2",
@@ -30,15 +30,15 @@
     },
     {
         "id":"3",
-        "name":"eğitim"
+        "name":"Eğitim"
     },
     {
         "id":"4",
-        "name":"elektronik"
+        "name":"Elektronik"
     },
     {
         "id":"5",
-        "name":"eğlence"
+        "name":"Eğlence"
     }
 
  ] 

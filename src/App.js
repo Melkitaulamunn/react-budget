@@ -1,51 +1,16 @@
-import React, { useEffect, useState } from "react";
-
-import Header from "./components/Header";
-import CategoriesList from "./components/CategoriesList";
-import ListExpenses from "./components/ListExpenses";
-
-import "./assets/styles/general.css";
-
-import axios from 'axios';
+import React from "react";
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+import Home from "./pages/Home";
+import AddExpense from "./pages/AddExpense";
 function App() {
-  const [expenses, setExpenses] = useState(null);
-  const [categories, setCategories] = useState(null);
-  const [selectedCategory, setSelectedCategory] = useState({
-    id: "0",
-    name: "Hepsi",
-  });
-
-  useEffect(() => {
-    axios
-      .get("http://localhost:3004/categories")
-      .then((res) => {
-        setCategories(res.data);
-      })
-      .catch((err) => {});
-    axios
-      .get("http://localhost:3004/expenses")
-      .then((res) => {
-        setExpenses(res.data);
-      })
-      .catch((err) => {});
-  }, []);
-
-  if (categories === null || expenses === null) return null;
-
   return (
-    <div>
-      <Header />
-      <CategoriesList
-        categories={categories}
-        selectedCategory={selectedCategory}
-        setSelectedCategory={setSelectedCategory}
-      />
-      <ListExpenses
-        selectedCategory={selectedCategory}
-        categories={categories}
-        expenses={expenses}
-      />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/add-expense" element={<AddExpense/>}/>
+      </Routes>
+    </BrowserRouter>
+   
   );
 }
 

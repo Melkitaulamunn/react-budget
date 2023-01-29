@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .expensesWrapper{
     width: 70%;
@@ -15,4 +16,31 @@
     padding: 50px;
     font-size: 18px;
     color: orangered;
+}
+.totalPriceWrapper{
+    position: absolute;
+    padding: 10px;
+    background-color: #fff;
+    top: 10px;
+    left: 90px;
+}
+.addBtn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 25px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+    z-index: 10;
+    filter: drop-shadow(2px 2px 10px rgba(0,0,0,0.6));
+}
+.addBtn img{
+    width: 100%;
+}
+.addBtn:hover {
+    transform: scale(1.05);
+    
 }
